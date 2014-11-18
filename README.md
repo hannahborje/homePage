@@ -1,4 +1,4 @@
 homePage
 ========
 
-Started working on my new homepage
+Started working on my new homepage. 
