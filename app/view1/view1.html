@@ -1,3 +1,23 @@
- <div class="textDiv" ng-controller="TextCtrl">
-   <h1 class="centerText" ng-style="textStyle">{{yolo}}</h1>
+ <div class="textDiv">
+     <div x-header></div>
  </div>
+<div  ng-controller="NavigatorCtrl">
+    <div class="navigator">
+        <ul>
+            <li><a href="">github</a></li>
+            <li><a href="">linkedin</a></li>
+            <li><a href="" ng-click="move()">who am i</a></li>
+            <li><a href="view2/view2.html">what have i done </a></li>
+        </ul>
+    </div>
+    <div class="info">
+     <p>{{myvalue}}</p>
+        <div class="monkeyWrapper">
+            <img ng-src="../app/img/codemonkeySmall.png" ng-show="myvalue"/>
+        </div>
+    </div>
+    <div ng-show="myvalue"></div>
+</div>
+
+
+

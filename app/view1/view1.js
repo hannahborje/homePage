@@ -8,19 +8,26 @@ angular.module('myApp.view1', ['ngRoute'])
             controller: 'View1Ctrl'
         });
     }])
+    .directive('header', [function () {
+        return {
+            restrict: 'AE',
+            replace: 'true',
+            template: '<h1 class="centerText">Hannah the Programmer</h1>'
+        }
+
+}])
+    .controller('NavigatorCtrl', ['$scope', function($scope) {
+        $scope.move = function() {
+            console.log("jelp");
+            $scope.myvalue = "I am a certified code monkey";
+        }
+
+    }])
 
     .controller('View1Ctrl', [function() {
         
-    }])
-
-    .controller('TextCtrl', ['$scope', function($scope) {
-    
-    /*
-      $scope.imageSource = {
-      'background-image': "url(http://s30.postimg.org/74ic3v80h/meagain.jpg)",
-      'background': "url(http://s30.postimg.org/vd3oacj0x/CAM00109.jpg)"
-      
-      }; */
-        $scope.yolo = "Hannah the Programmer";
-
     }]);
+
+
+
+

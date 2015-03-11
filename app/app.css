@@ -1,7 +1,11 @@
-/* my Style */
+@charset "UTF-8";
+@import url('http://fonts.googleapis.com/css?family=Advent+Pro');
+/* CSS Document */
+
 
 html {
-    background: url(http://s30.postimg.org/74ic3v80h/meagain.jpg) no-repeat center center fixed;
+    /*background: url(http://s30.postimg.org/74ic3v80h/meagain.jpg) no-repeat center center fixed;*/
+    background: url(../app/img/sky.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,10 +13,10 @@ html {
     overflow: hidden;
 }
 h1.centerText {
-    left: 0;
+    left: -180px;
     line-height: 200px;
     margin: auto;
-    margin-top: -40px;
+    margin-top: -80px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -23,4 +27,51 @@ h1.centerText {
     font-weight: 400;
     letter-spacing: -1px;
     text-transform: uppercase;
+}
+.textDiv {
+    height: 370px;
+}
+.navigator ul {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    padding-left: 12%;
+    margin: 0;
+    overflow: auto;
+}
+.navigator a {
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .3s background-color;
+}
+.navigator li {
+    font-family: 'Advent Pro', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    display: inline-block;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+}
+.info {
+    height: 200px;
+     margin: 1% 20% 0 20%;
+}
+.info p {
+    font-family: 'Advent Pro', sans-serif;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    float:left;
+}
+.monkeyWrapper {
+    float:left;
+    padding: 15px;
+    margin-left:5%;
 }
