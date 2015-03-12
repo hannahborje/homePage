@@ -3,7 +3,7 @@
 /* CSS Document */
 
 
-html {
+.box {
     /*background: url(http://s30.postimg.org/74ic3v80h/meagain.jpg) no-repeat center center fixed;*/
     background: url(../app/img/sky.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -11,6 +11,9 @@ html {
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+}
+h1 {
+    font-family: 'Advent Pro', sans-serif;
 }
 h1.centerText {
     left: -180px;
@@ -23,7 +26,6 @@ h1.centerText {
     width: 100%;
     font-size: 60px;
     color: white;
-    font-family: 'Advent Pro', sans-serif;
     font-weight: 400;
     letter-spacing: -1px;
     text-transform: uppercase;
@@ -63,15 +65,39 @@ h1.centerText {
      margin: 1% 20% 0 20%;
 }
 .info p {
+    float:left;
+}
+p {
     font-family: 'Advent Pro', sans-serif;
     line-height: 50px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 400;
     color: white;
-    float:left;
+}
+h2 {
+    font-family: 'Advent Pro', sans-serif;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }
 .monkeyWrapper {
     float:left;
     padding: 15px;
     margin-left:5%;
+}
+.some {
+    height: 300px;
+}
+.doneWrapper {
+    background-color: #F7773F;
+    height: 300px;
+    margin-top:35%;
+}
+.doneWrapper p {
+    text-align: center;
+}
+.clearFloat {
+    clear:left;
 }
